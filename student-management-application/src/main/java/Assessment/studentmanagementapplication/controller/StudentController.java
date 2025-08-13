@@ -35,6 +35,7 @@ public class StudentController {
         studentScoreService.createStudentScore(studentScoreDto);
         return new ResponseEntity<>(savedStudent, HttpStatus.CREATED);
     }
+    //Demo
 
     @PostMapping("/addingScore")
     public ResponseEntity<StudentScoreDto> addStudentScore(@RequestBody StudentScoreDto studentScoreDto) {
